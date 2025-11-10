@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="24dp">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/home" />
+
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_roundwhite"
+        android:entries="@array/verify_options" />
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile or email"
+        android:background="@drawable/ic_round"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:inputType="textEmailAddress|phone" />
+
+    <Button
+        android:id="@+id/btnSendOtp"
+        android:text="Send OTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/otpField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_round"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnSubmitOtp"
+        android:text="Submit OTP"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
