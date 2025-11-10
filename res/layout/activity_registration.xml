@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/home" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_round"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_round"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Birthdate (non-editable, opens date picker) -->
+        <EditText
+            android:id="@+id/etBirthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Birthdate"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/ic_round"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Country Dropdown -->
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_roundwhite"
+            android:prompt="@string/country_prompt"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_roundwhite"
+            android:prompt="@string/Language_prompt"
+            />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</LinearLayout>
