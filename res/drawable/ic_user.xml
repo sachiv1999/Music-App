@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Red circular background -->
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M256,32
+                          A224,224 0 1,1 256,480
+                          A224,224 0 1,1 256,32z" />
+
+    <!-- Head -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M256,150
+                          a58,58 0 1,1 0,116
+                          a58,58 0 1,1 0,-116z" />
+
+    <!-- Shoulders / bust -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M160,340
+                          C160,300 352,300 352,340
+                          L352,380
+                          C352,400 336,416 256,416
+                          C176,416 160,400 160,380
+                          Z" />
+</vector>
